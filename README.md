@@ -27,18 +27,27 @@ projeto-fullstack/
 ├── backend/                 # Backend (FastAPI)
 │   ├── app/                 # Código principal
 │   │   ├── main.py          # Ponto de entrada FastAPI
-│   │   └── models.py        # Modelos Pydantic e MongoDB
+│   │   ├── models.py        # Modelos Pydantic e MongoDB
+│   │   ├── routes/          # Rotas da API
+│   │   │   ├── categories.py # Rotas para categorias
+│   │   │   ├── dashboard.py  # Rotas para o dashboard
+│   │   │   ├── orders.py     # Rotas para pedidos
+│   │   │   └── products.py   # Rotas para produtos
+│   │   ├── database.py      # Configuração do MongoDB
+│   │   └── utils.py         # Funções utilitárias
 │   ├── Dockerfile           # Dockerfile para backend
 │   ├── requirements.txt     # Dependências
 │   └── scripts/             # Scripts auxiliares
+│       ├── init.sh          # Script de inicialização
+│       └── seed_db.py       # Script para popular o banco de dados
 ├── docker-compose.yml       # Configuração do Docker Compose
 ├── frontend/                # Frontend (React com Next.js)
 │   ├── Dockerfile           # Dockerfile para frontend
 │   ├── package.json         # Dependências
-│   ├── src/                 # Código-fonte
-│   │   ├── app/             # Páginas Next.js
-│   │   ├── components/      # Componentes reutilizáveis
-│   │   └── stories/         # Storybook assets
+│   └── src/                 # Código-fonte
+│       ├── app/             # Páginas Next.js
+│       ├── components/      # Componentes reutilizáveis
+│       └── stories/         # Storybook assets
 ├── lambda/                  # Funções Lambda (Serverless)
 │   ├── handler.py           # Função Lambda principal
 │   └── serverless.yml       # Configuração do Serverless Framework

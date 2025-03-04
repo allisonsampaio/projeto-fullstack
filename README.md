@@ -153,24 +153,32 @@ O frontend foi desenvolvido usando **React** e **Material-UI**. Ele consiste nas
 
 - **Listagem**: Exibe todos os produtos cadastrados.
 - **Criação**: Permite adicionar produtos, incluindo imagens.
+  
+![image](https://github.com/user-attachments/assets/23630c7b-de59-4d0e-bec5-1d754c6cef77)
 
 ### 2. Página de Categorias
 
 - **Listagem**: Exibe todas as categorias cadastradas.
 - **Criação**: Permite adicionar novas categorias.
 
+![image](https://github.com/user-attachments/assets/38b256db-6fd8-483e-bfdf-5b2085ede885)
+
 ### 3. Página de Pedidos
 
 - **Listagem**: Exibe todos os pedidos cadastrados.
 - **Criação**: Permite adicionar pedidos.
 
-### 4. Dashboard
+![image](https://github.com/user-attachments/assets/9ace3576-cf6f-4b1f-aa89-094bef40e6cb)
+
+### 4. Dashboard (home)
 
 - Exibe métricas de vendas, como:
   - Quantidade total de pedidos.
   - Valor médio por pedido.
   - Receita total.
   - Pedidos por período (últimos 7 dias).
+
+![image](https://github.com/user-attachments/assets/58cb8dbf-147b-400a-8933-bb8e0a46c459)
 
 ---
 

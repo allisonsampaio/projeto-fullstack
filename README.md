@@ -24,49 +24,25 @@ A estrutura do projeto é a seguinte:
 
 ```
 projeto-fullstack/
-├── backend/ # Código do backend (FastAPI)
-│ ├── app/ # Módulo principal do backend
-│ │ ├── init.py # Inicialização do módulo
-│ │ ├── main.py # Ponto de entrada da aplicação FastAPI
-│ │ └── models.py # Definição dos modelos Pydantic e MongoDB
-│ ├── Dockerfile # Dockerfile para o backend
-│ ├── requirements.txt # Dependências do backend
-│ └── scripts/ # Scripts utilitários
-│ ├── init.sh # Script de inicialização
-│ └── seed_db.py # Script para popular o banco de dados com dados fictícios
-├── docker-compose.yml # Arquivo de configuração do Docker Compose
-├── frontend/ # Código do frontend (React com Next.js)
-│ ├── Dockerfile # Dockerfile para o frontend
-│ ├── package.json # Dependências do frontend
-│ ├── public/ # Arquivos estáticos
-│ │ ├── assets/ # Imagens e ícones
-│ │ │ └── logo.png # Logo da aplicação
-│ ├── src/ # Código-fonte do frontend
-│ │ ├── app/ # Páginas da aplicação (Next.js App Router)
-│ │ │ ├── categories/ # Página de categorias
-│ │ │ │ └── page.tsx # Componente da página de categorias
-│ │ │ ├── dashboard/ # Página de dashboard
-│ │ │ │ └── page.tsx # Componente da página de dashboard
-│ │ │ ├── layout.tsx # Layout principal da aplicação
-│ │ │ ├── orders/ # Página de pedidos
-│ │ │ │ └── page.tsx # Componente da página de pedidos
-│ │ │ ├── page.tsx # Página inicial
-│ │ │ └── products/ # Página de produtos
-│ │ │ └── page.tsx # Componente da página de produtos
-│ │ ├── components/ # Componentes reutilizáveis
-│ │ │ ├── DataTable/ # Componente de tabela
-│ │ │ │ ├── DataTable.stories.tsx # Documentação do DataTable no Storybook
-│ │ │ │ └── DataTable.tsx # Implementação do DataTable
-│ │ │ └── Form/ # Componente de formulário
-│ │ │ ├── Form.stories.tsx # Documentação do Form no Storybook
-│ │ │ └── Form.tsx # Implementação do Form
-│ │ └── stories/ # Configurações e assets do Storybook
-│ │ ├── assets/ # Imagens e ícones para o Storybook
-│ └── tsconfig.json # Configuração do TypeScript
-├── lambda/ # Código para funções Lambda (Serverless)
-│ ├── handler.py # Função Lambda principal
-│ └── serverless.yml # Configuração do Serverless Framework
-└── README.md # Este arquivo
+├── backend/                 # Backend (FastAPI)
+│   ├── app/                 # Código principal
+│   │   ├── main.py          # Ponto de entrada FastAPI
+│   │   └── models.py        # Modelos Pydantic e MongoDB
+│   ├── Dockerfile           # Dockerfile para backend
+│   ├── requirements.txt     # Dependências
+│   └── scripts/             # Scripts auxiliares
+├── docker-compose.yml       # Configuração do Docker Compose
+├── frontend/                # Frontend (React com Next.js)
+│   ├── Dockerfile           # Dockerfile para frontend
+│   ├── package.json         # Dependências
+│   ├── src/                 # Código-fonte
+│   │   ├── app/             # Páginas Next.js
+│   │   ├── components/      # Componentes reutilizáveis
+│   │   └── stories/         # Storybook assets
+├── lambda/                  # Funções Lambda (Serverless)
+│   ├── handler.py           # Função Lambda principal
+│   └── serverless.yml       # Configuração do Serverless Framework
+└── README.md                # Documentação
 ```
 
 ---

@@ -47,6 +47,7 @@ projeto-fullstack/
 │   └── src/                 # Código-fonte
 │       ├── app/             # Páginas Next.js
 │       ├── components/      # Componentes reutilizáveis
+│       ├── hooks/           # Hooks reutilizáveis
 │       └── stories/         # Storybook assets
 ├── lambda/                  # Funções Lambda (Serverless)
 │   ├── handler.py           # Função Lambda principal
